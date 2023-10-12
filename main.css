@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100px;
+}
+.carousel-inner {
+  height: 580px;
+}
+.carousel .carousel-item img {
+  max-width: 100%;
+  max-height: auto; /* İstenilen yüksekliği burada ayarlayabilirsiniz */
+  width: auto;
+  height: auto;
+}
+
+.urun-img-container {
+  display: flex; /* Satır içi bir flex container oluşturur */
+  justify-content: space-evenly; /* İçerikleri yatayda ortalar */
+  align-items: center; /* İçerikleri dikeyde ortalar */
+  margin: 40px 80px 40px 80px;
+}
+
+.urun-img-container img {
+  max-width: 80%; /* Resimleri container içine sığdırmak için */
+}
+.urun-detay:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.urun-detay {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.urun-icerik {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-sepet-ekle {
+  background-color: #00af66;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.btn-devam-et {
+  background-color: #2a2f2f;
+  width: 100%;
+  color: white;
+  height: 45px;
+  margin-bottom: 20px;
+  border: none;
+}
+.slogan-images {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.logo-slogan {
+  font-size: 65px;
+  padding: 10px;
+}
+
+.hoodie-baf-img {
+  margin-right: 15px;
+}
+
+.hoodie-baf-img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
