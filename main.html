@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="LandNoir" content="LandNoir-Magaza" />
     <title>LandNoir MAinPage Demo</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -57,8 +62,12 @@
                 Kadın
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Tshirt</a></li>
-                <li><a class="dropdown-item" href="#">Çanta</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Tshirt</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Çanta</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Çorap</a>
                 </li>
@@ -77,170 +86,221 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Ürün Ara"
-              aria-label="Search"
-            />
-          </form>
+
+          <div
+            class="site-uyelik-yonlendirme d-flex align-items-center gap-2 ms-auto"
+          >
+            <form class="d-flex ms-auto" role="search">
+              <input
+                class="urun-ara"
+                type="search"
+                placeholder="Ürün Ara"
+                aria-label="Search"
+              />
+            </form>
+            <a href="#">Giriş Yap</a>
+            <a href="#">Üye Ol</a>
+          </div>
         </div>
       </div>
     </nav>
     <!-- navbar bitis -->
 
     <!-- banner baslangic -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active banner">
+            <img
+              src="/image/LANDnoir-banner.jpg"
+              class="d-block w-100 banner-image"
+              alt="LandNoir-Banner-first"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/image/LANDnoir-banner.jpg"
+              class="d-block w-100"
+              alt="LandNoir-Banner-second"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/image/LANDnoir-banner.jpg"
+              class="d-block w-100"
+              alt="LandNoir-Banner-third"
+            />
+          </div>
+        </div>
         <button
+          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
+          data-bs-slide="prev"
         ></button>
         <button
+          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active banner">
-          <img
-            src="/image/LANDnoir-banner.jpg"
-            class="d-block w-100 banner-image"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/image/LANDnoir-banner.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/image/LANDnoir-banner.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
+
     <!-- banner bitis -->
     <!-- urun listelenmesi baslangic -->
     <div>
       <div class="urun-img-container">
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
       </div>
       <div class="urun-img-container">
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
         <div class="urun-detay">
-          <img src="./image/urun.png" alt="urun-img" />
-          <h6 class="urun-icerik">
-            <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
-          </h6>
-          <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          <div class="heart-div">
+            <a href="#">
+              <i class="far fa-heart heart" style="color: #00af66"></i
+            ></a>
+            <img src="./image/urun.png" alt="urun-img" />
+          </div>
+          <div class="urun-detay-text">
+            <h6 class="urun-icerik">
+              <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+            </h6>
+            <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+          </div>
         </div>
       </div>
 
       <div class="devam-btn-div">
-        <a href="#"
+        <a href="/product-list.html/product-list.html"
           ><button class="btn-devam-et">Devam Etmek İçin Tıklayınız</button></a
         >
       </div>
 
       <div class="slogan-images">
         <div>
-          <h2 class="logo-slogan">
-            LANDNOIR <br />
-            DOĞANIN DOKUNUŞU
-          </h2>
-        </div>
-        <div>
-          <a href="#"
-            ><img class="hoodie-baf-img" src="image/hoodie.png" alt="hoodie"
-          /></a>
-
-          <a href="#">
-            <img class="hoodie-baf-img" src="image/baf.png" alt="baf"
-          /></a>
+          <h2 class="logo-slogan">LANDNOIR DOĞANIN DOKUNUŞU</h2>
         </div>
         <div>
           <a href="#"
@@ -252,8 +312,126 @@
           /></a>
         </div>
       </div>
+
+      <div class="urunler-cesit">
+        <a href="#">
+          <div class="urunYonlendirme-Container">
+            <img
+              class="urun-yonlendirme"
+              src="./image/kadin-urun.png"
+              alt="kadin-urun-list"
+            />
+            <p class="p-deneme">Kadın</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="urunYonlendirme-Container">
+            <img
+              class="urun-yonlendirme"
+              src="./image/erkek-urun.png"
+              alt="kadin-urun-list"
+            />
+            <p class="p-deneme">Erkek</p>
+          </div>
+        </a>
+      </div>
     </div>
+
     <!-- urun listelenmesi bitis -->
+    <h1 class="insta-davet">BİZİ TAKİP EDİN !</h1>
+    <div class="takip-et">
+      <a href="#" target="_blank" class="insta-takip"
+        ><i class="fab fa-instagram fa-lg" style="color: #fc97d2"></i
+        >@LandNoir</a
+      >
+    </div>
+    <img
+      class="insta-img"
+      src="./image/follow-us-images.png"
+      alt="instagram-gönderilen-imageler"
+    />
+    <!-- footer baslangic -->
+    <footer>
+      <div class="footer-v1">
+        <div class="flex-wrapper-one">
+          <div class="num-24px">
+            <img
+              alt="land-noirlogo-footer"
+              class="landnoir-logo21-1-removebg-preview-1"
+              src="./image/footer-logo.png"
+            />
+            <p class="copyright">
+              Tasarımlarında hayvanların ve doğa’nın kullanıldığı bir tekstil
+              markasıdır.
+            </p>
+          </div>
+          <div class="footer-column">
+            <p class="footer-title">Kurumsal</p>
+            <div class="footer-links">
+              <p class="hakkimizda">Hakkımızda</p>
+              <p class="hakkimizda">Mağazalar</p>
+            </div>
+          </div>
+          <div class="footer-column-two">
+            <p class="footer-title">Bilgi</p>
+            <div class="footer-links">
+              <p class="hakkimizda">İletişim</p>
+              <p class="hakkimizda">Siparişlerim</p>
+              <p class="hakkimizda">Sipariş Takip</p>
+              <p class="hakkimizda">Favori Ürünler</p>
+              <p class="hakkimizda">Müşteri Hizmetleri</p>
+            </div>
+          </div>
+          <div class="footer-column-three">
+            <p class="footer-title">Yasal</p>
+            <div class="footer-links">
+              <p class="hakkimizda">İadeler, Değişimler ve İptaller</p>
+              <p class="hakkimizda">Kullanıcı Sözleşmesi</p>
+              <p class="hakkimizda">Mesafeli Satış Sözleşmesi</p>
+            </div>
+          </div>
+          <div class="group-39464">
+            <p class="footer-title-two">İletişim</p>
+            <div class="link">
+              <!-- Link konulacak -->
+            </div>
+            <div class="link">
+              <!-- Link konulacak -->
+            </div>
+            <div class="num-8px">
+              <div class="spacer-icon-wrapper">
+                <div class="line-rounded-mark">
+                  <!-- Link konulacak -->
+                </div>
+                <div class="spacer"></div>
+              </div>
+              <p class="footer-description">
+                Land Noir<br />
+                San Francisco
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="line-135"></div>
+        <div class="footer-content">
+          <p class="footer-left">
+            Copyright © 2023 Tüm Hakları Saklıdır. Tasarım Büşra - Yavuz
+          </p>
+          <p class="footer-right">
+            Tüm Hakları Saklıdır | Şartlar ve Koşullar | Gizlilik Politikası
+          </p>
+        </div>
+        <img
+          alt=""
+          src="https://static.overlay-tech.com/assets/00529717-53bd-42ce-b843-4f1df4851dc7.png"
+        />
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/your-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

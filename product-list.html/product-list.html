@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="../fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+   
+    <link rel="stylesheet" href="product-list.css">
+  </head>
+  <body>
+    <!-- navbar baslangic -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid  ">
+        <a class="navbar-brand" href="../main.html">
+          <img class="logo" src="../image/land-noirlogo" alt="landnoir-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Ana Sayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kadın</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Erkek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kurumsal</a>
+            </li>
+           
+            </li>
+          </ul>
+
+          <div
+            class="site-uyelik-yonlendirme d-flex align-items-center gap-2 ms-auto"
+          >
+            <form class="d-flex ms-auto" role="search">
+              <input
+                class="urun-ara"
+                type="search"
+                placeholder="Ürün Ara"
+                aria-label="Search"
+              />
+            </form>
+            <a href="#">Giriş Yap</a>
+            <a href="#">Üye Ol</a>
+          </div>
+        
+        </div>
+      </div>
+    </nav>
+    <!-- navbar bitis -->
+
+    <div class="container">
+    <div class="row">
+        <div class="col-4 sidebar-left">
+          
+          
+            <ul class="product-categories ">
+              <li>
+                <div class="sidebar-title">
+                  <h2>Ürünlerimiz</h2>                 
+                </div>
+              </li>
+                <li> <a href="#">Tshirt</a></li>
+                <li><a href="#">Çanta</a></li>
+                <li> <a href="#">Çorap</a> </li>
+                <li> <a href="#">Şapka/Bere</a></li>
+                <li><a href="#">Hoodie</a></li>
+                <li><a href="#">Eşofman</a></li>
+                <li><a href="#">Baf</a></li>
+                <li><a href="#">Şort</a></li>
+            </ul>
+        </div>
+        <div class="col-8 products-container">
+
+          <div class="row">
+           
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="urun-detay">
+                <div class="heart-div">
+                  <a href="#">
+                    <i class="far fa-heart heart" style="color: #00af66"></i
+                  ></a>
+                  <img src="../image/urun.png" alt="urun-img" />
+                </div>
+                <div class="urun-detay-text">
+                  <h6 class="urun-icerik">
+                    <em>Kızıl Tilki Light-Weight T-shirt - Mavi</em>
+                  </h6>
+                  <button type="button" class="btn-sepet-ekle">Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

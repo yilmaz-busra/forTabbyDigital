@@ -7,7 +7,7 @@
   width: 100px;
 }
 .carousel-inner {
-  height: 580px;
+  height: auto;
 }
 .carousel .carousel-item img {
   max-width: 100%;
@@ -16,6 +16,21 @@
   height: auto;
 }
 
+.urun-ara {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.urun-ara:focus {
+  outline: none;
+}
+
+.site-uyelik-yonlendirme a {
+  text-decoration: none;
+  color: black;
+}
 .urun-img-container {
   display: flex; /* Satır içi bir flex container oluşturur */
   justify-content: space-evenly; /* İçerikleri yatayda ortalar */
@@ -24,18 +39,41 @@
 }
 
 .urun-img-container img {
-  max-width: 80%; /* Resimleri container içine sığdırmak için */
+  max-width: 100%; /* Resimleri container içine sığdırmak için */
+  display: flex;
 }
-.urun-detay:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
+
 .urun-detay {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+}
+.heart-div {
+  position: relative;
+  display: flex;
+}
+.heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 10;
+  font-size: 20px;
+}
+.fa-heart:hover {
+  color: #a7c7ba !important;
+}
+.urun-detay-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.urun-detay:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .urun-icerik {
   font-size: 12px;
@@ -61,25 +99,282 @@
   margin-bottom: 20px;
   border: none;
 }
-.slogan-images {
+
+.slogan-images-container {
   display: flex;
+  gap: 15px;
+  /* flex-direction: column; */
   align-items: center;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 25px;
-  margin-left: 25px;
-}
-.logo-slogan {
-  font-size: 65px;
-  padding: 10px;
+  justify-content: center;
+  padding: 0px 40px;
 }
 
+.slogan-images {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 50px;
+}
+.logo-slogan {
+  padding: 10px;
+}
 .hoodie-baf-img {
-  margin-right: 15px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 .hoodie-baf-img:hover {
   transform: scale(1.05);
   transition: 0.5s;
+}
+
+.urunler-cesit {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.urunYonlendirme-Container {
+  width: 40vw;
+  position: relative;
+}
+
+.p-deneme {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  padding: 15px;
+  color: black;
+  font-weight: 700;
+}
+
+.urun-yonlendirme {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.insta-davet {
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 25px 0 25px 0;
+}
+
+.takip-et {
+  text-align: center;
+  padding: 5px;
+}
+.insta-takip {
+  font-size: 24px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.insta-takip i {
+  margin-right: 10px;
+}
+.insta-img {
+  width: 100%;
+}
+/* 
+footer */
+.footer-v1 {
+  background-color: #2a2f2f;
+  overflow: hidden;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+.flex-wrapper-one {
+  margin-bottom: 107.76px;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.num-24px {
+  margin-right: 40.64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.landnoir-logo21-1-removebg-preview-1 {
+  width: 96px;
+  height: 60px;
+  margin-bottom: 24px;
+}
+.copyright {
+  max-width: 310.36px;
+}
+.footer-column {
+  margin-top: 30px;
+  margin-right: 99px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-title {
+  margin-bottom: 40px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hakkimizda {
+  text-align: center;
+}
+.hakkimizda:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+.footer-column-two {
+  margin-top: 30px;
+  margin-right: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-column-three {
+  margin-top: 30px;
+  margin-right: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.group-39464 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-title-two {
+  margin-bottom: 42px;
+}
+.link {
+  margin-bottom: 22px;
+}
+.num-8px {
+  display: flex;
+  align-items: flex-start;
+}
+.spacer-icon-wrapper {
+  margin-right: 8px;
+  padding: 5.7px 0 0;
+  position: relative;
+}
+.line-rounded-mark {
+  position: relative;
+}
+.spacer {
+  width: 16.74px;
+  height: 10.46px;
+
+  position: absolute;
+  left: 1.41px;
+  top: 0;
+}
+.footer-description {
+  max-width: 197.62px;
+}
+.line-135 {
+  width: 1241px;
+  height: 1px;
+
+  margin-bottom: 24.1px;
+}
+.footer-content {
+  padding: 0px 20px;
+  margin-left: 10.4px;
+  display: flex;
+  align-items: flex-start;
+}
+.footer-left {
+  margin-right: 253.53px;
+}
+.footer-right {
+  text-align: right;
+}
+
+@media (max-width: 1000px) {
+  /* Ürün listesi ve detayları */
+  .urun-img-container {
+    display: flex;
+    flex-wrap: wrap; /* Ürünleri yan yana sıralama */
+  }
+
+  .urun-detay {
+    width: 50%; /* Mobil cihazlarda iki sütunlu düzen */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .urun-detay img {
+    max-width: 100%;
+  }
+  .urunler-cesit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+  }
+
+  .urunYonlendirme-Container {
+    width: 60vw;
+    margin: 3px;
+  }
+
+  .slogan-images-container {
+    flex-direction: column;
+  }
+
+  .slogan-images {
+    text-align: center;
+    margin-right: 50px;
+  }
+  .logo-slogan {
+    padding: 10px;
+  }
+  .hoodie-baf-img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .num-24px {
+    text-align: center;
+  }
+  .heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    z-index: 10;
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    z-index: 10;
+    font-size: 12px;
+  }
 }

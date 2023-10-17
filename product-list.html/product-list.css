@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  width: 100px;
+}
+.urun-ara {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.urun-ara:focus {
+  outline: none;
+}
+
+.site-uyelik-yonlendirme > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* col-4 css */
+.sidebar-left {
+  height: fit-content;
+  padding: 10px;
+  /* background-color: #00af66; */
+}
+.sidebar-title {
+  padding-bottom: 3px;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}
+.sidebar-title > h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.underline {
+  width: 90px; /* Çizginin genişliği */
+  height: 2px; /* Çizginin yüksekliği (kalınlığı) */
+  margin-top: 5px;
+  /* Başlıktan yukarıdaki boşluk */
+  margin-left: 25px;
+  background-color: #000000;
+  align-items: center;
+}
+.product-categories {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.product-categories > li {
+  width: 100px;
+  margin: 10px 0px;
+  padding: 5px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.product-categories > li:hover {
+  cursor: pointer;
+  background-color: #2a2f2f;
+  color: white;
+}
+
+.product-categories > li:hover a {
+  color: white;
+}
+
+.product-categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.urun-img-container {
+  display: flex;
+  flex-wrap: wrap; /* Ürünleri yan yana sıralama */
+}
+
+.urun-detay {
+  width: 100%; /* Mobil cihazlarda iki sütunlu düzen */
+  padding: 10px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.urun-detay img {
+  max-width: 100%;
+}
+.heart-div {
+  position: relative;
+}
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  z-index: 10;
+  font-size: 12px;
+}
+.urun-detay-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.urun-detay:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.urun-icerik {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-sepet-ekle {
+  background-color: #00af66;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 12px;
+}
